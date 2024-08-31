@@ -13,18 +13,18 @@ main {
   /* Styles for the card */
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: $color-white;
   border-radius: 0.8rem;
   // Fit the image inside container without removing border-radius
   overflow: hidden;
   max-width: 60rem;
   height: 100%;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
 }
 
 .card__image-container {
   /* Styles for the image container */
-  flex: 1;
+  min-height: 0;
 }
 
 .card__image {
@@ -38,8 +38,6 @@ main {
 .card__content {
   /* Styles for the content */
   padding: $spacing-240;
-  flex-grow: 1;
-  flex-basis: 50%;
 }
 
 .card__header {
@@ -47,10 +45,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: $spacing-200;
-}
-
-.card__tag-container {
-  /* Styles for the tag container */
 }
 
 .card__tag {
@@ -115,5 +109,20 @@ main {
   &:hover {
     background-color: $color-green-200;
     cursor: pointer;
+  }
+}
+
+// Handle desktop
+// @media (min-width: $breakpoint-mobile) {
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    max-height: 45rem;
+  }
+  .card__image-container {
+    flex-basis: 50%;
+  }
+  .card__content {
+    flex-basis: 50%;
   }
 }
