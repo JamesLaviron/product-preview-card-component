@@ -73,7 +73,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: start;
-  padding-bottom: $spacing-200;
+  padding-block-end: $spacing-200;
   gap: $spacing-190;
   align-items: center;
 }

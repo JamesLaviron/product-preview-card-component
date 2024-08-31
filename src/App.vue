@@ -13,7 +13,7 @@
             ../images/image-product-450.jpg 450w,
             ../images/image-product-600.jpg 600w
           "
-          sizes="(min-width: 66rem) 40vw, (min-width: 44em) 90vw, 90vw"
+          sizes="(max-width: 45rem) 600w, (max-width: 60rem) 450w, 300w"
         />
       </div>
       <section class="card__content">
