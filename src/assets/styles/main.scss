@@ -3,29 +3,28 @@ main {
   margin: auto;
   background-color: $color-cream;
   width: 100vw;
-  height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: $spacing-160;
+  height: 100vh;
 }
 
 .card {
   /* Styles for the card */
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   background-color: $color-white;
-  margin: $spacing-160;
   border-radius: 0.8rem;
   // Fit the image inside container without removing border-radius
   overflow: hidden;
   max-width: 60rem;
+  height: 100%;
 }
 
 .card__image-container {
   /* Styles for the image container */
-  flex-grow: 1;
-  flex-basis: 50%;
-  max-height: fit-content;
-  max-height: 45rem;
+  flex: 1;
 }
 
 .card__image {
