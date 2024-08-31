@@ -62,7 +62,7 @@ main {
 
 .card__description {
   /* Styles for the description */
-  text-align: left;
+  text-align: start;
   padding: $spacing-160 0 $spacing-240 0;
   @include text-preset-3;
   color: $color-grey;
@@ -72,7 +72,7 @@ main {
   /* Styles for the price section */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  text-align: left;
+  text-align: start;
   padding-bottom: $spacing-200;
   gap: $spacing-190;
   align-items: center;
